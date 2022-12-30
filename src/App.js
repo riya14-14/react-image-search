@@ -30,7 +30,7 @@ function App() {
       </div>
 
       <div className="prodetails">
-        {searchQ.length === 0 ? <h2 style={{ color: "red" }}>No images found</h2> : null}
+        {searchData.length === 0 ? <h2 style={{ color: "red" }}>No images found</h2> : null}
         {searchData.map((img, key) => {
           return <Images src={img.urls.small} key={key} alt="" />;
         })}
